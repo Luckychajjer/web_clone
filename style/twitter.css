@@ -1,0 +1,387 @@
+body{
+    background-color: black;
+    font-family:system-ui;
+    padding-left: 396px;
+    padding-right: 514px;
+    padding-top:104px ;
+    color: white;
+}
+p{
+    margin:0;
+}
+
+.main_box{
+    display: flex;
+}
+.leftside{
+    width: 184px;
+    position: fixed;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 140px;
+    padding-top: 4px;
+    padding-right: 80px;
+    border-right-width: 1px;
+    border-style: solid;
+    border-color: rgba(98, 98, 98, 0.63);
+    
+}
+.icon{
+    width: 100%;
+    height: 24px;
+    opacity: 0.8;
+}
+.icon_box{
+    padding-top: 10px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 8px;
+    width: 28px;
+}
+.icon_box:hover{
+    border-radius: 24px;
+    background-color: rgba(209, 209, 209,0.126);
+    cursor: pointer;
+}
+.search_box,
+.explore_box{
+    display: flex;
+    justify-content:space-between;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+    margin-top: 20px;
+}
+.hash{
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 20px;
+}
+.setting_icon{
+    width: 36px;
+    height: 38px;
+    padding-left: 12px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.explore_box:hover,
+.search_box:hover{
+    border-radius: 20px;
+    background-color:rgba(209, 209, 209,0.126);
+}
+.mid_top{
+    position: fixed;
+    top: 0;
+    left: 405px;
+    right: 520px;
+    border: 0;
+    display:flex;
+    flex-direction: column; 
+    border-bottom-width:1px;
+    border-style: solid;
+    border-color: rgba(98, 98, 98, 0.63);
+    height: 110px;
+    background-color: rgba(0, 0, 0, 0.942);
+}
+.search_bar_box{
+    display: flex; 
+    margin-left: 16px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.gray_search{
+    padding-left: 20px;
+    width: 30px;
+    opacity: 0.3;
+}
+.search_bar{
+    height: 50px;
+    border: 0;
+    display: flex;
+    width: 500px;
+    align-items: center;
+    background-color: rgba(209, 209, 209,0.126);
+    border-radius: 25px;
+
+}
+.search_text{
+    border: 0;
+    height: 40px;
+    width: 100%;
+    background-color: rgba(209, 209, 209, 0.01);
+}
+.search_text:focus{
+    box-shadow: 0;
+    outline: 0;
+}
+.search_bar_box .setting_icon{
+    padding-top:8px ;
+}
+.toggle_topic{
+    display: flex;
+}
+.topic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px;
+    width: 20%;
+    transition: background-color 0.15s;
+    color: gray;
+}
+.topic:hover{
+    background-color: rgba(209, 209, 209,0.126);
+    color: white;
+    font-weight: 500;
+    opacity: 1;
+}
+.topic:hover .blue_bar{
+    opacity: 1;
+}
+.topic_name{
+    padding-top: 13px;
+}
+.blue_bar{
+    width: 100%;
+    margin-top: 14px;
+    border-width: 2px;
+    border-radius: 2px;
+    border-style: solid;
+    border-color: rgb(75, 113, 230);
+    opacity: 0;
+}
+.rightside{
+    width: 490px;
+    position: fixed;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 14px;
+    font-size: 14px;
+    color: gray;
+    border-left-width: 1px;
+    border-style: solid;
+    border-color: rgba(98, 98, 98, 0.63);
+}
+.log_in{
+    width: 310px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 20px;
+    padding-left: 14px;
+    padding-right: 30px;
+}
+.new_header{
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    margin-left: 4px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.info{
+    font-size: 12px;
+    margin-top:14px ;
+}
+.google_button,
+.log_button{
+    background-color: white;
+    width: 320px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    margin-top: 14px;
+    border-radius: 20px;
+    padding-top:4px;
+    font-weight: 700;
+    font-size: 16px;
+}
+.highlight{
+    color: rgb(80, 126, 242);
+}
+.apple_img,
+.google_sign_img{
+    width: 26px;
+    border-radius: 13px;
+}
+.apple_img{
+    
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+.sign_info{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding-left: 10px;
+}
+.sign_in{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-size: 12px;
+    font-weight:500;
+    color: rgb(41, 41, 41);
+}
+.extra_info{
+    margin-top: 20px;
+    width: 300px;
+    padding-left: 10px;
+}
+.log_in .info{
+    margin-bottom: 14px;
+}
+.extra_info .info{
+    margin: 0;
+    line-height: 22px;
+}
+
+.mid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 0;
+}
+.points_table,.trending_tweets{
+    padding: 6px 14px;
+}
+.main_info{
+    padding:0px 14px;
+    padding-top: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+.info_f,
+.info_p{
+    margin:0;
+    font-weight: 700;
+    font-size: 12px;
+}
+.info_f{
+    color: gray;
+}
+.trending_tweets:hover,
+.main_info:hover,
+.points_table:hover{
+    background-color: rgba(36, 36, 36, 0.247);
+}
+.points_everton .everton_box{
+    display: flex;
+    padding: 8px 12px; 
+    background-color: rgba(43, 83, 203, 0.786);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.everton_info{
+    margin-left: 14px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+}
+.everton_box img{
+    width: 44px;
+}
+.points_tottenham .everton_box{
+    display: flex;
+    padding: 8px 12px;
+    background-color:rgba(0, 0, 139, 0.501);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    margin-bottom: 6px;
+}
+.trending_tweets{
+    padding-top: 10px;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.tweets_header{
+    height: 26px;
+    display: flex;
+    justify-content: space-between;
+}
+.extra_option{
+    width: 24px;
+    height: 24px;
+}
+.tweets_nos,
+.trending_region{
+    font-size: 12px;
+    color: gray;
+}
+.extra_option:hover{
+    border-radius: 14px;
+    border-width: 1px;
+    border-style:solid;
+    border-color: royalblue;
+}
+.tweets_hastag{
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: -10px;
+    margin-bottom:2px;
+}
+.bottomside{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height:50px;
+    background-color: rgb(29, 155, 240);
+    box-shadow: 0px 0px 4px white;
+    display: flex;
+    padding: 12px 0px;
+}
+.bottom_text{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 400px;
+}
+.log_sign{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    gap: 10px;
+}
+.text_in{
+    font-weight: 700;
+    font-size: 24px;
+}
+.text_out{
+    font-size: 14px;
+}
+.log_but,
+.sign_but{
+    font-size: 14px;
+    padding: 8px 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 18px;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: white;
+    color: white;
+}
+.sign_but{
+    border: 0;
+    background-color:white;
+    color: black;
+}
